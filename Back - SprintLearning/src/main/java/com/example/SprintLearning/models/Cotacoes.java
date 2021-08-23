@@ -1,6 +1,6 @@
 package com.example.SprintLearning.models;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,24 +16,24 @@ public class Cotacoes {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int id;
+	private Long id;
 	
-	private int idMoeda;
+	private Long idMoeda;
 	
 	private double valor;
 	
 	private Date data;
 	
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
-	public int getIdMoeda() {
+	public Long getIdMoeda() {
 		return idMoeda;
 	}
-	public void setIdMoeda(int idMoeda) {
+	public void setIdMoeda(Long idMoeda) {
 		this.idMoeda = idMoeda;
 	}
 	public double getValor() {
