@@ -31,10 +31,11 @@ public class CotacoesService {
 			cotacao.setData(data);
 			cotacao.setIdMoeda(idMoeda);
 			cotacao.setValor(valorMoeda);
+
+			_cotacoesRepository.save(cotacao);
 		} catch (Exception e) {
 			System.out.println("Erro: " + e.getMessage());
 		}
-		
 		return cotacao;
 	}
 	public Cotacoes RetornarCotacao(long id) {

@@ -1,0 +1,22 @@
+#Valor {
+  width:100%;
+  color:azure;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3rem;
+}
+#variavel{
+}
+table {
+  width: 80%;
+  margin:auto;
+  background-color:rgba(0, 0, 0, 0.1);
+}
+table td,th {
+  width:20%;
+  color:azure;
+  margin:auto;
+}
+

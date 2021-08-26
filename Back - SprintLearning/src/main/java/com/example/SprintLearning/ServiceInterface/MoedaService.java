@@ -13,4 +13,6 @@ public class MoedaService {
 	public Long PegarIdPeloNome(String nome) {
 		return _moedaRepository.findByNome(nome).getId();
 	}
+
+
 }

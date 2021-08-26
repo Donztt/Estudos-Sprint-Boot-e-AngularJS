@@ -39,7 +39,7 @@ public class CotacoesController {
 		return _cotacoesService.RetornarCotacao(id);
 	}
 
-	@PostMapping("/Cotacoes/Dolar")
+	@GetMapping("/Cotacoes/Dolar")
 	@ApiOperation(value = "Retorna o valor mais recente do Dólar")
 	public Cotacoes getValorMaisRecente() {
 
