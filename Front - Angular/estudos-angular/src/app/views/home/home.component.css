@@ -1,22 +1,32 @@
 #Valor {
-  width:100%;
-  color:azure;
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 3rem;
 }
 #variavel{
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #D2D0BA;
+    text-align: center;
+    padding-top: 20px;
 }
-table {
-  width: 80%;
-  margin:auto;
-  background-color:rgba(0, 0, 0, 0.1);
-}
-table td,th {
-  width:20%;
-  color:azure;
-  margin:auto;
+#tabela {
+  overflow: auto;
+  height: 500px;
 }
 
+table {
+  width: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+table td,th {
+  width: 20%;
+  color: azure;
+  margin: auto;
+}
+#Prices{
+  border-radius: 30px;
+  padding: 20px;
+  background-color:rgb(0, 0, 0,0.3);
+}

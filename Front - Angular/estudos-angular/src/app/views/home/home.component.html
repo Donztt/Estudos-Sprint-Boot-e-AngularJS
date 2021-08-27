@@ -1,37 +1,39 @@
 <div id="Home">
-  <div class="container-md">
+  <div class="container-md" id = "Prices">
 
-      <div id="Valor">
-        <ng-container *ngIf="price; let price;">
-          <span id="variavel">Reais/Dolar: {{price.valor}} R$</span>
+    <div id="Valor">
+      <ng-container *ngIf="price; let price;">
+        <h2 id="variavel">Reais/Dolar: {{price.valor}} R$</h2>
+      </ng-container>
+    </div>
+
+    <app-my-line-chart></app-my-line-chart>
+
+    <div id = "tabela">
+      <table mat-table [dataSource]="pricesList" class="mat-elevation-z8">
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> No. </th>
+          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
         </ng-container>
-      </div>
 
+        <ng-container matColumnDef="nome">
+          <th mat-header-cell *matHeaderCellDef> Cotacao </th>
+          <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+        </ng-container>
 
-    <table mat-table [dataSource]="pricesList" class="mat-elevation-z8">
-      <ng-container matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef> No. </th>
-        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
-      </ng-container>
+        <ng-container matColumnDef="valor">
+          <th mat-header-cell *matHeaderCellDef> Valor </th>
+          <td mat-cell *matCellDef="let element"> {{element.valor}} </td>
+        </ng-container>
 
-      <ng-container matColumnDef="nome">
-        <th mat-header-cell *matHeaderCellDef> Cotacao </th>
-        <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
-      </ng-container>
+        <ng-container matColumnDef="data">
+          <th mat-header-cell *matHeaderCellDef> Data </th>
+          <td mat-cell *matCellDef="let element"> {{element.data}} </td>
+        </ng-container>
 
-      <ng-container matColumnDef="valor">
-        <th mat-header-cell *matHeaderCellDef> Valor </th>
-        <td mat-cell *matCellDef="let element"> {{element.valor}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="data">
-        <th mat-header-cell *matHeaderCellDef> Data </th>
-        <td mat-cell *matCellDef="let element"> {{element.data}} </td>
-      </ng-container>
-
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-    </table>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
   </div>
 </div>
-

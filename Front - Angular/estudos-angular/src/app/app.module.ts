@@ -8,12 +8,15 @@ import { HomeComponent } from './views/home/home.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ChartsModule } from 'ng2-charts';
+import { MyLineChartComponent } from './views/my-line-chart/my-line-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    MyLineChartComponent
   ],
   imports: [
     HttpClientModule,
@@ -22,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http'
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
