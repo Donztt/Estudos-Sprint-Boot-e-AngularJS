@@ -2,6 +2,9 @@
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: 3rem;
+  padding-bottom: 20px;
+  border-bottom: 5px solid;
+  border-color: black;
 }
 #variavel{
     font-size: 1.8em;
@@ -13,6 +16,10 @@
 #tabela {
   overflow: auto;
   height: 500px;
+  border-radius: 30px;
+}
+#tabela::-webkit-scrollbar {
+  display: none;
 }
 
 table {
@@ -26,7 +33,12 @@ table td,th {
   margin: auto;
 }
 #Prices{
+  margin-top: 10px;
   border-radius: 30px;
   padding: 20px;
   background-color:rgb(0, 0, 0,0.3);
+  border-right: 10px solid;
+  border-left: 10px solid;
+  border-color: black;
+  filter: drop-shadow(0 6px 15px #011531);
 }
